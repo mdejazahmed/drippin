@@ -1,0 +1,221 @@
+@import "../../style.scss";
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  .contactBanner {
+    width: 100%;
+    min-height: 800px;
+    background-image: url("public/assets/heroBg.png");
+  }
+  .contactWrapper {
+    width: 100%;
+    min-height: 625px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @include tablet{
+      height: 1400px;
+    }
+    .floatDiv {
+      width: 80%;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: #fff;
+        font-family: Libre Baskerville;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 167%; /* 106.88px */
+      }
+      .formContainer {
+        min-height: 889px;
+        border-radius: 133px 133px 10px 10px;
+        background: #fff;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.25),
+          0px 4px 33px 0px rgba(0, 0, 0, 0.25) inset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        p {
+          color: #2f2e41;
+          text-align: center;
+          font-family: Libre Baskerville;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 105%; /* 21px */
+          width: 80%;
+        }
+        .mediaContainer {
+          width: 100%;
+          display: flex;
+          gap: 40px;
+          margin-top: 20px;
+          @include tablet{
+            flex-direction: column;
+          }
+          form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            .nameContainer {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 27px;
+              input {
+                flex: 1;
+                border-radius: 30px;
+                background: #fff;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+                padding: 10px 10px;
+                border: none;
+                outline: none;
+              }
+            }
+            input {
+              border-radius: 30px;
+              background: #fff;
+              box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+              padding: 10px 10px;
+              border: none;
+              outline: none;
+            }
+          }
+          textarea {
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background: #fff;
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+            padding: 20px 10px;
+          }
+          button {
+            border-radius: 30px;
+            background: #162458;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 10px;
+          }
+          .discardBtn {
+            border-radius: 30px;
+            border: 1px solid #162458;
+            background: #fff;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+            color: #162458;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+        .ourSocial {
+          flex: 1;
+          border-radius: 10px 10px 130px 10px;
+          background: #3e67c1;
+          box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px;
+          h1 {
+            color: #fff;
+            text-align: center;
+            font-family: Libre Baskerville;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .iconCard {
+            align-self: stretch;
+            display: flex;
+            min-height: 100px;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            .iconContainer {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              .icon {
+                width: 45px;
+                height: 45px;
+                color: white;
+              }
+              p {
+                color: #fff;
+                text-align: center;
+                font-family: Libre Baskerville;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+          img {
+          }
+          .supportCard {
+            align-self: stretch;
+            border-radius: 10px 10px 75px 10px;
+            background: #f5ce00;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+            min-height: 272px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            h1 {
+              color: #2f2e41;
+              text-align: center;
+              font-family: Libre Baskerville;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+            p {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    p {
+      width: 80%;
+      color: #2f2e41;
+      text-align: center;
+      font-family: Libre Baskerville;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 105%; /* 21px */
+      margin-bottom: 20px;
+    }
+  }
+}

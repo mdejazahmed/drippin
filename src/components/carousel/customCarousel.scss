@@ -1,0 +1,24 @@
+.carouselContainer{
+    width: 100%;
+    position: relative;
+   
+    .navBtn1{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 98;
+    }
+    .carousel{
+        display: flex;
+        gap:1rem;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      
+        .carouselCard{
+            width: 8rem;
+            height: 12rem;
+            background-color: white;
+            flex-shrink: 0;
+    }
+    }
+}

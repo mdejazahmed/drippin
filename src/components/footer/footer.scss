@@ -1,0 +1,45 @@
+@import "../../style.scss";
+// footer
+ .footer {
+    width: 100%;
+    background: linear-gradient(to top, #2c2d38 0%, #3e67c1 100%);
+    .footerWrapper {
+      padding: 2rem 10%;
+      min-height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items:last center;
+      justify-content: space-between;
+      @include tablet{
+        flex-direction: column;
+      }
+      .footerDiv {
+        flex: 1;
+        position: relative;
+        img {
+         
+        }
+        h1 {
+          color: #f6f6f6;
+          font-family: Libre Baskerville;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 105%;
+          margin-top: 15px;
+          span {
+            color: #f5ce00;
+          }
+        }
+
+        p {
+          color: #d9d9d9;
+          font-family: Libre Baskerville;
+          font-size: 18px;
+          font-style: normal;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
